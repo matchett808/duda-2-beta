@@ -42,22 +42,26 @@
 
 
 <!-- PHOTOS -->
-        <div class="photos">
+        <div class="photos screen-wrapper">
              <div class="cover" id="cover">
 <!--             <a href="##page1|1500" class="helper-arrow" href="#fbsection2">↓</a>
  -->            <a href="##page1|1200">
                 <span class="link-spanner"></span>
             </a>
+            <div class="screen"></div>
+            </div>
+
+             <div class="page1" id="page1"> <a href="##page2|1200"><span class="link-spanner"></span></a><div class="screen"></div></div>
+             <div class="page2" id="page2"> <a href="##page3|1200"><span class="link-spanner"></span></a><div class="screen"></div></div>
+             <div class="page3" id="page3"> <a href="##page4|1200"><span class="link-spanner"></span></a><div class="screen"></div></div>
+             <div class="page4" id="page4"> <a href="##page5|1200"><span class="link-spanner"></span></a><div class="screen"></div></div>
+             <div class="page5" id="page5"> <a href="##page6|1200"><span class="link-spanner"></span></a><div class="screen"></div></div>
+             <div class="page6" id="page6"> <a href="##page7|1200"><span class="link-spanner"></span></a><div class="screen"></div></div>
+             <div class="page7" id="page7"> <a href="##page8|1200"><span class="link-spanner"></span></a><div class="screen"></div></div>
+             <div class="page8" id="page8"> <a href="##cover|600"><span class="link-spanner"></span></a><div class="screen"></div></div>
         </div>
-             <div class="page1" id="page1"> <a href="##page2|1200"><span class="link-spanner"></span></a></div>
-             <div class="page2" id="page2"> <a href="##page3|1200"><span class="link-spanner"></span></a></div>
-             <div class="page3" id="page3"> <a href="##page4|1200"><span class="link-spanner"></span></a></div>
-             <div class="page4" id="page4"> <a href="##page5|1200"><span class="link-spanner"></span></a></div>
-             <div class="page5" id="page5"> <a href="##page6|1200"><span class="link-spanner"></span></a></div>
-             <div class="page6" id="page6"> <a href="##page7|1200"><span class="link-spanner"></span></a></div>
-             <div class="page7" id="page7"> <a href="##page8|1200"><span class="link-spanner"></span></a></div>
-             <div class="page8" id="page8"> <a href="##cover|600"><span class="link-spanner"></span></a></div>
-        </div>
+
+
 
     <!--  -->
     <!-- SCRIPTS -->
@@ -68,19 +72,25 @@
         <!-- Include Arbitrary Anchor Script -->
         <script type="text/javascript" src="/javascripts/jquery.arbitrary-anchor.js"></script>
 
-        <!-- SIDEBAR JQUERY -->
+        <!-- SIDEBAR JQUERY
+        add .screen-wrapper to parent and
+        .screen to div to be masked -->
+
         <script>
         $(function() {
-          $('.fixed').click(function() {
+          $('.fixed,.sidebar').click(function() {
             $('.sidebar').toggleClass('show');
           });
-          $('.fixed').click(function() {
+          $('.fixed,.sidebar').click(function() {
             $('.toggle-it').toggleClass('on');
           });
+          $('.fixed,.sidebar').click(function() {
+            $('.screen-wrapper').toggleClass('on');
+          });
+
 
         });
 
-        </script>
-    </body>
+        </script>    </body>
 </html>
 

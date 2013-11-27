@@ -146,19 +146,38 @@ a{
     }
 }
 
+//
+// MEDIA QUERIES
+//
 
+/* 900px and under*/
+// resizing sidebar
+@media only screen and (max-width: 900px) {
+    .sidebar{
+        font-size: 1.6em;
+        transition: font-size 1ms ease-in;
+        transition: left 200ms ease-in;
+    }
 
-// MEDIA QUIERIES
+    .on{
+        .fixed{
+            left: 168px;
+        }
+    }
+}
 // 320 and under
 @media only screen and (max-width: 320px) {
-
-
+.on{
+    .fixed{
+        a{
+            color:white;
+        }
+    }
+}
     .link-spanner{
         z-index:1;
     }
     .sidebar{
-        width:52%;
-        font-size: 2.1em;
         ul{
         margin:50px 0 0 12px;
             li{
@@ -169,6 +188,13 @@ a{
     .fixed{
         margin-top: 13.5%;
         margin-left: -30px;
+    }
+
+
+    .on{
+        .fixed{
+            left: 158px;
+        }
     }
 }
 

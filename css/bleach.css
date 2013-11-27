@@ -41,6 +41,21 @@ html, body {
   background-position: 75% 50%;
 }
 
+/* 900px and under*/
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+
+  .on .fixed {
+    left: 158px;
+  }
+  .on .fixed a {
+    color: white;
+  }
+}
 /* 320 and */
 @media only screen and (max-width: 320px) {
   .photos div {

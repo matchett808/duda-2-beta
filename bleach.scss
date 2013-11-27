@@ -71,6 +71,29 @@ html, body{
 
     }
 }
+//
+// MEDIA QUERIES
+//
+
+/* 900px and under*/
+// resizing sidebar
+@media only screen and (max-width: 900px) {
+    .sidebar{
+        font-size: 1.6em;
+        transition: font-size 1ms ease-in;
+        transition: left 200ms ease-in;
+    }
+
+    .on{
+        .fixed{
+            left: 158px;
+            a{
+                color:white;
+            }
+        }
+    }
+}
+
 
 /* 320 and */
 @media only screen and (max-width: 320px) {
