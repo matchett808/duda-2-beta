@@ -1,0 +1,114 @@
+html{
+    height:100%;
+}
+.arrow-container{
+    position: relative;
+    height: 100%;
+    float: right;
+    width: 25%;
+
+}
+
+.helper-arrow{
+    right: 5px;
+    bottom: 52;
+    z-index: 1;
+    &:hover{
+        bottom: 42;
+    }
+}
+// SALMON
+body{
+    position:relative;
+}
+.play-div{
+    font-family:"Compact Sans Serifs",tahoma,verdana,arial,sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.1em;
+    position:fixed;
+    top:5;
+    left: 382;
+    width: 838px;
+    z-index: 99999;
+    .play-button:active{
+        color: grey;
+    }
+}
+
+
+
+
+// INSERT PHOTOS HERE
+.photos{
+    // border: 1px solid red;
+    div{
+        // border:1px solid blue;
+        background-size: 65%;
+
+    }
+
+    .cover{
+        position: relative;
+        background-image: url(../images/optimized/salmon.jpg);
+        background-position: 86.4% 46%;
+
+    }
+    .page1{
+        background-image: url(../images/optimized/salmon02.jpg);
+        background-position: 86.4% 46%;
+
+
+    }
+    .page2{
+        background-image: url(../images/optimized/salmon03.jpg);
+        background-position: 86.4% 46%;
+
+    }
+    .page3{
+        background-image: url(../images/optimized/salmon04.jpg);
+        background-position: 86.4% 46%;
+
+    }
+    .page4{
+        background-image: url(../images/optimized/salmon05.jpg);
+        background-position: 86.4% 46%;
+
+    }
+    .page5{
+        background-image: url(../images/optimized/salmon06.jpg);
+        background-position:86.4% 46%;
+
+    }
+    .page6{
+        background-image: url(../images/optimized/salmon07.jpg);
+        background-position: 86.4% 46%;
+
+    }
+    .page7{
+        background-image: url(../images/optimized/salmon08.jpg);
+        background-position: 86.4% 46%;
+
+    }
+    .page8{
+        background-image: url(../images/optimized/salmon09.jpg);
+        background-position: 86.4% 46%;
+
+    }
+}
+/* 320 and */
+@media only screen and (max-width: 320px) {
+.photos{
+    div{
+        width: 100%;
+        height: 100%;
+        background-size: 80%;
+    }
+}
+
+
+
+}
+
+
+

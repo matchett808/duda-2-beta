@@ -1,0 +1,293 @@
+html, body{
+    height:100%;
+}
+
+@import 'reset';
+@import 'bootstrap';
+
+//          //
+//  GLOBAL  //
+//          //
+
+
+a{
+    text-decoration: none;
+    color:black;
+    &:hover{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+//                 //
+//  HELPER CLASSES //
+//                 //
+
+
+
+
+
+//      //
+// BODY //
+//      //
+
+// DESCRIPTIONS
+
+.project-title{
+    font-size:50px;
+    color: white;
+    margin: 0 0 0 0;
+    position: relative;
+    text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.3);
+}
+
+.project-description{
+    font-size:14px;
+    color:white;
+    min-width:150px;
+    height:100px;
+    width: 15%;
+    p{
+        color: white;
+        opacity: 0;
+        transition: 1s ease-in;
+        text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.7);
+
+    }
+    h2{
+    opacity: .6;
+    transition: .7s linear;
+        .hide-on-hover{
+        font-size:15px;
+        padding-left: 10px;
+        vertical-align:middle;
+        transition: .7s;
+
+        }
+        &:hover{
+        opacity: .9
+
+        }
+        &:hover + p{
+        opacity: .9;
+        }
+        &:hover .hide-on-hover{
+        opacity: 0;
+        // display: none
+        // ^fade out or replace?
+        }
+        //
+        // REPLACE RIGHT ARROW
+        // WITH DOWN ARROW?
+        //
+        // &:hover:after{
+        //     content: "▼";
+        //     font-size:16px;
+        //     padding-left: 10px;
+        //     vertical-align:middle;
+        // }
+    }
+}
+
+.fbsection1{
+    .project-description{
+        position: relative;
+        left: 20%;
+        top: 45%;
+    }
+}
+
+.fbsection2{
+    .project-description{
+        position: relative;
+        top: 26%;
+        left: 70%;
+    }
+}
+.fbsection3{
+    .project-description{
+        position: relative;
+        top: 25%;
+        left: 10%;
+    }
+}
+
+// BACKGROUND IMAGES
+
+.stories-photos{
+    height: 100%;
+    position: relative;
+}
+.stories-photos > div{
+    position: relative;
+    height:100%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+#fbsection1{
+
+    background-size: cover;
+    height: 100%;
+    background-image: url(../images/optimized/bleach.jpg);
+}
+#fbsection2{
+    background-size: cover;
+    height: 100%;
+    background-image: url(../images/optimized/salmon.jpg);
+}
+#fbsection3{
+    height: 100%;
+    background-size: cover;
+    background-image: url(../images/optimized/previews/buddy-preview.jpg);
+}
+
+// SIDEBAR WHITENED
+.sidebar{
+    a{
+    color:white;
+    opacity: .6;
+        &:hover{
+            color:white;
+            opacity:.7;
+        }
+    }
+}
+
+.fixed{
+    a{
+    color:white;
+    opacity: .6;
+        &:hover{
+            color:white;
+            opacity:.7;
+        }
+    }
+}
+
+// DOWN ARROW
+.helper-arrow{
+    right: 16px;
+    bottom: 0px;
+    color: white;
+    &:hover{
+        color:white;
+        bottom: -12px;
+    }
+}
+
+//
+// MEDIA QUERIES
+//
+
+/* 650px and under*/
+@media only screen and (max-width: 670px) {
+
+
+
+.fbsection1{
+    .project-description{
+        left: 13%;
+        width: 40%;
+        top: 7%;
+        .project-title{
+        opacity:.7;
+        }
+
+    p{
+        opacity:.8;
+      }
+    }
+}
+
+.fbsection2{
+    .project-description{
+        left: 55%;
+        top: 7%;
+        width: 40%;
+        .project-title{
+        opacity:.7;
+        }
+
+        p{
+            opacity:.8;
+        }
+    }
+}
+
+.fbsection3{
+                background-color: rgba(255,255,255,.3);
+
+    .project-description{
+
+        left: 13%;
+        top: 7%;
+        width: 50%;
+        .project-title{
+        opacity:.7;
+        }
+
+        p{
+            opacity:.8;
+        }
+    }
+}
+}
+/* 320 and */
+@media only screen and (max-width: 320px) {
+
+
+    .helper-arrow{
+        opacity: .4;
+        right: 30%;
+    }
+
+    // .fixed{
+    //     a{
+    //         opacity: .7;
+
+    //     }
+    // }
+    .project-description{
+        .project-title{
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+
+        }
+        p:hover{
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            opacity: .8;
+        }
+    }
+
+    #fbsection1{
+        .project-description{
+            width: 80%;
+            left: 20%;
+            top: 13%;
+        }
+    }
+
+    #fbsection2{
+        background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
+        .project-description{
+            left: 20%;
+            top: 13%;
+            width: 10%
+        }
+    }
+
+    #fbsection3{
+        background-image: url(../images/optimized/previews/buddy-alt-preview.jpg);
+        .project-description{
+            left: 20%;
+            top: 13%;
+            width: 80%;
+        }
+    }
+
+
+}
+
+
+

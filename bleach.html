@@ -1,0 +1,99 @@
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/css/bleach.css">
+
+    <title>Bleach</title>
+</head>
+    <body>
+
+        <!-- HELPER ARROW -->
+
+
+        <div class="arrow-container">
+            <a href="##page1|1200" class="helper-arrow">↓</a>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="toggle-it">
+        <div class="fixed">
+        <a>
+        EMILY DUDA  <span class="show"> +</span> <span class="hide"> -</span>
+        </a>
+        </div>
+        </div>
+         <div class="sidebar">
+                <ul>
+                    <li> <a> EMILY DUDA</a>  </li>
+                    <li> <a href="/stories.html"> STORIES </a> </li>
+                    <li> <a> OBJECTS </a> </li>
+                    <li> <a> CONTACT </a> </li>
+                </ul>
+        </div>
+
+        <!-- PHOTOS -->
+
+        <div class="photos">
+            <div class="cover" id="cover">
+                <!-- <a href="##page1|1400" class="helper-arrow">↓</a> -->
+                <a href="##page1|1200">
+                    <span class="link-spanner"></span>
+                </a>
+            </div>
+             <!-- <a href="##page1" class="helper-arrow" href="#fbsection2">↓</a> -->
+
+             <div class="page1" id="page1">
+                <!-- <a href="#page2" class="helper-arrow" href="#fbsection2">↓</span> -->
+                <a href="##page2|1200">
+                    <span class="link-spanner"></span>
+                </a>
+            </div>
+             <div class="page2" id="page2">
+                <!-- <a href="#page3" class="helper-arrow" href="#fbsection2">↓</span> -->
+                <a href="##page3|1200">
+                    <span class="link-spanner"></span>
+                </a>
+            </div>
+             <div class="page3" id="page3">
+                <!-- <a href="#page4" class="helper-arrow" href="#fbsection2">↓</span> -->
+                <a href="##page4|1200">
+                    <span class="link-spanner"></span>
+                </a>
+            </div>
+             <div class="page4" id="page4">
+                <!-- <a href="#page5" class="helper-arrow" href="#fbsection2">↓</span> -->
+                <a href="##page5|1200">
+                    <span class="link-spanner"></span>
+                </a>
+            </div>
+            <div class="page5" id="page5">
+                <!-- <a href="#cover"  class="helper-arrow" href="#fbsection2">↓</span> -->
+                <a href="##cover|600">
+                    <span class="link-spanner"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- SCRIPTS -->
+        <!-- Include jQuery -->
+        <script src="javascripts/jquery.js"></script>
+        <!-- Include Arbitrary Anchor Script -->
+        <script type="text/javascript" src="/javascripts/jquery.arbitrary-anchor.js"></script>
+
+        <!-- SIDEBAR JQUERY -->
+        <script>
+        $(function() {
+          $('.fixed').click(function() {
+            $('.sidebar').toggleClass('show');
+          });
+          $('.fixed').click(function() {
+            $('.toggle-it').toggleClass('on');
+          });
+
+        });
+
+        </script>
+    </body>
+</html>
+

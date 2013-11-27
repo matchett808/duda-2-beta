@@ -1,0 +1,90 @@
+// AUDIO
+html, body{
+    height:100%;
+}
+//
+// helper-arrow to guide user to scroll
+// need js scroll easing script
+//
+
+
+
+.helper-arrow{
+    right: 33px;
+    bottom: 29px;
+    &:hover{
+        bottom: 18;
+    }
+}
+
+
+
+
+// INSERT PHOTOS HERE
+.photos{
+    // position:relative;
+    // border: 1px solid red;
+
+    div{
+        width: 100%;
+        // border:1px solid blue;
+        background-size: 60%;
+        height:100%
+        // position: relative;
+    }
+
+    .cover{
+        background-image: url(../images/optimized/bleach.jpg);
+        background-position: 75% 50%;
+        position: relative;
+
+
+    }
+    .page1{
+        background-image: url(../images/optimized/bleach02.jpg);
+        background-position: 75% 50%;
+        // position: relative;
+
+
+    }
+    .page2{
+        background-image: url(../images/optimized/bleach03.jpg);
+        background-position: 75% 48%;
+        // position: relative;
+
+    }
+    .page3{
+        background-image: url(../images/optimized/bleach04.jpg);
+        background-position: 75% 50%;
+        // position: relative;
+
+    }
+    .page4{
+        background-image: url(../images/optimized/bleach05.jpg);
+        background-position: 75% 48%;
+        // position: relative;
+
+    }
+    .page5{
+        background-image: url(../images/optimized/bleach06.jpg);
+        background-position: 75% 50%;
+        // position: relative;
+
+    }
+}
+
+/* 320 and */
+@media only screen and (max-width: 320px) {
+.photos{
+    div{
+        width: 100%;
+        height: 100%;
+        background-size: 80%;
+    }
+}
+
+
+
+}
+
+
