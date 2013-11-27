@@ -93,8 +93,8 @@ a{
 .fbsection1{
     .project-description{
         position: relative;
-        left: 20%;
-        top: 45%;
+            left: 60%;
+            top: 20%;
     }
 }
 
@@ -108,8 +108,8 @@ a{
 .fbsection3{
     .project-description{
         position: relative;
-        top: 25%;
-        left: 10%;
+        top: 18%;
+        left: 27%;
     }
 }
 
@@ -145,12 +145,18 @@ a{
 
 // SIDEBAR WHITENED
 .sidebar{
+    // background-color: rgba(0,0,0,.22);
+    min-width: 325px;
+    // box-shadow: 1px 0px 3px rgba(0,0,0,.22);
     a{
     color:white;
+    transition: 300ms linear;
     opacity: .6;
+    // opacity: 1;
         &:hover{
             color:white;
-            opacity:.7;
+            opacity:.9;
+            // opacity: 1;
         }
     }
 }
@@ -159,17 +165,22 @@ a{
     a{
     color:white;
     opacity: .6;
+    // opacity: 1;
+    transition: 300ms linear;
         &:hover{
             color:white;
-            opacity:.7;
+            opacity:.9;
         }
     }
 }
+
+
 
 // DOWN ARROW
 .helper-arrow{
     right: 16px;
     bottom: 0px;
+    // border: 1px solid black;
     color: white;
     &:hover{
         color:white;
@@ -181,62 +192,112 @@ a{
 // MEDIA QUERIES
 //
 
-/* 650px and under*/
-@media only screen and (max-width: 670px) {
-
-
-
-.fbsection1{
-    .project-description{
-        left: 13%;
-        width: 40%;
-        top: 7%;
-        .project-title{
-        opacity:.7;
-        }
-
-    p{
-        opacity:.8;
-      }
+/* 900px and under*/
+@media only screen and (max-width: 900px) {
+    .sidebar{
+        font-size: 1.6em;
+        transition: font-size 1ms ease-in;
+        transition: left 200ms ease-in;
     }
-}
 
-.fbsection2{
-    .project-description{
-        left: 55%;
-        top: 7%;
-        width: 40%;
-        .project-title{
-        opacity:.7;
+    .on{
+        .fixed{
+            left: 148px;
         }
+    }
+
+    #fbsection1{
+        .project-description{
+            left: 50%;
+            top: 25%;
+            width: 40%;
+            .project-title{
+            opacity:.7;
+            }
 
         p{
             opacity:.8;
+          }
+        }
+    }
+
+    #fbsection2{
+        background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
+        .project-description{
+        top: 28%;
+        left: 27%;
+            width: 40%;
+            .project-title{
+            opacity:.7;
+            }
+
+            p{
+                opacity:.8;
+            }
+        }
+    }
+
+    #fbsection3{
+        background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
+        background-color: rgba(255,255,255,.3);
+        .project-description{
+        top: 24%;
+        left: 67%;
+        width: 30%;
+            .project-title{
+                opacity:.7;
+            }
+
+            p{
+                opacity:.8;
+            }
         }
     }
 }
+// 786 and under (tablet portrait)
+@media only screen and (max-width: 768px) {
 
-.fbsection3{
-                background-color: rgba(255,255,255,.3);
-
-    .project-description{
-
-        left: 13%;
-        top: 7%;
-        width: 50%;
-        .project-title{
-        opacity:.7;
-        }
-
-        p{
-            opacity:.8;
-        }
+    #fbsection3{
+        .project-description{
+        top: 12%;
+        left: 58%;}
     }
 }
+// 480 and under //
+@media only screen and (max-width: 480px) {
+    .on{
+        .fixed{
+            a{
+            opacity:.9;
+            }
+        }
+    }
+    #fbsection1{
+        .project-description{
+            left: 15%;
+            width: 80%;
+            }
+    }
+    #fbsection2{
+        .project-description{
+            left: 15%;
+            width: 80%;
+            }
+    }
+    #fbsection3{
+        .project-description{
+            left: 15%;
+            width: 80%;
+            }
+    }
 }
 /* 320 and */
 @media only screen and (max-width: 320px) {
-
+    .on{
+        .fixed{
+            left: 158px;
+        }
+    }
 
     .helper-arrow{
         opacity: .4;
@@ -273,7 +334,7 @@ a{
         .project-description{
             left: 20%;
             top: 13%;
-            width: 10%
+            width: 80%
         }
     }
 

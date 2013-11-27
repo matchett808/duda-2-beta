@@ -2599,8 +2599,8 @@ a:hover {
 
 .fbsection1 .project-description {
   position: relative;
-  left: 20%;
-  top: 45%;
+  left: 60%;
+  top: 20%;
 }
 
 .fbsection2 .project-description {
@@ -2611,8 +2611,8 @@ a:hover {
 
 .fbsection3 .project-description {
   position: relative;
-  top: 25%;
-  left: 10%;
+  top: 18%;
+  left: 27%;
 }
 
 .stories-photos {
@@ -2646,22 +2646,27 @@ a:hover {
   background-image: url(../images/optimized/previews/buddy-preview.jpg);
 }
 
+.sidebar {
+  min-width: 325px;
+}
 .sidebar a {
   color: white;
+  transition: 300ms linear;
   opacity: .6;
 }
 .sidebar a:hover {
   color: white;
-  opacity: .7;
+  opacity: .9;
 }
 
 .fixed a {
   color: white;
   opacity: .6;
+  transition: 300ms linear;
 }
 .fixed a:hover {
   color: white;
-  opacity: .7;
+  opacity: .9;
 }
 
 .helper-arrow {
@@ -2674,49 +2679,93 @@ a:hover {
   bottom: -12px;
 }
 
-/* 650px and under*/
-@media only screen and (max-width: 670px) {
-  .fbsection1 .project-description {
-    left: 13%;
-    width: 40%;
-    top: 7%;
+/* 900px and under*/
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
   }
-  .fbsection1 .project-description .project-title {
+
+  .on .fixed {
+    left: 148px;
+  }
+
+  #fbsection1 .project-description {
+    left: 50%;
+    top: 25%;
+    width: 40%;
+  }
+  #fbsection1 .project-description .project-title {
     opacity: .7;
   }
-  .fbsection1 .project-description p {
+  #fbsection1 .project-description p {
     opacity: .8;
   }
 
-  .fbsection2 .project-description {
-    left: 55%;
-    top: 7%;
+  #fbsection2 {
+    background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
+  }
+  #fbsection2 .project-description {
+    top: 28%;
+    left: 27%;
     width: 40%;
   }
-  .fbsection2 .project-description .project-title {
+  #fbsection2 .project-description .project-title {
     opacity: .7;
   }
-  .fbsection2 .project-description p {
+  #fbsection2 .project-description p {
     opacity: .8;
   }
 
-  .fbsection3 {
+  #fbsection3 {
+    background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
     background-color: rgba(255, 255, 255, 0.3);
   }
-  .fbsection3 .project-description {
-    left: 13%;
-    top: 7%;
-    width: 50%;
+  #fbsection3 .project-description {
+    top: 24%;
+    left: 67%;
+    width: 30%;
   }
-  .fbsection3 .project-description .project-title {
+  #fbsection3 .project-description .project-title {
     opacity: .7;
   }
-  .fbsection3 .project-description p {
+  #fbsection3 .project-description p {
     opacity: .8;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #fbsection3 .project-description {
+    top: 12%;
+    left: 58%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .on .fixed a {
+    opacity: .9;
+  }
+
+  #fbsection1 .project-description {
+    left: 15%;
+    width: 80%;
+  }
+
+  #fbsection2 .project-description {
+    left: 15%;
+    width: 80%;
+  }
+
+  #fbsection3 .project-description {
+    left: 15%;
+    width: 80%;
   }
 }
 /* 320 and */
 @media only screen and (max-width: 320px) {
+  .on .fixed {
+    left: 158px;
+  }
+
   .helper-arrow {
     opacity: .4;
     right: 30%;
@@ -2742,7 +2791,7 @@ a:hover {
   #fbsection2 .project-description {
     left: 20%;
     top: 13%;
-    width: 10%;
+    width: 80%;
   }
 
   #fbsection3 {
