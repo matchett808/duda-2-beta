@@ -67,9 +67,9 @@ a{
         // margin-top: -1.8%;
         margin-right:20px;
         background:no-repeat fixed;
-        background-position: 81% 0%;
+        background-position: 81% 45%;
         // background-height: 100%;
-        background-size: contain;
+        background-size: 80%;
         //  &:nth-child(2n){
         //     background-color: F7F7F7;
         // }
@@ -88,7 +88,7 @@ a{
     }
     .page2{
         background-image: url(../images/optimized/buddy02.jpg);
-        background-position: 83% 0px;
+        background-position: 83% ;
 
     }
     .page3{
@@ -105,11 +105,11 @@ a{
     }
     .page7{
         background-image: url(../images/optimized/buddy07.jpg);
-        background-position: 83% -1%;
+        background-position: 83% 44%;
 }
     .page8{
         background-image: url(../images/optimized/buddy08.jpg);
-        background-position: 83% 0%;
+        background-position: 83% ;
 
     }
 
@@ -123,6 +123,7 @@ a{
     height: 100%;
     float: right;
     width: 25%;
+    z-index: 99;
 
 }
 .helper-arrow{
@@ -162,6 +163,27 @@ a{
     .on{
         .fixed{
             left: 168px;
+        }
+    }
+
+    .link-spanner{
+        z-index:1;
+    }
+}
+
+// 480 and under
+@media only screen and (max-width: 480px) {
+
+.photos{
+    div{
+        background-size: 90%;
+    }
+}
+    .on{
+        .fixed{
+            a{
+                color:white;
+            }
         }
     }
 }
