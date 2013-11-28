@@ -2727,7 +2727,7 @@ a:hover {
   margin-right: 20px;
   background: no-repeat fixed;
   background-position: 81% 45%;
-  background-size: 80%;
+  background-size: 70%;
 }
 .photos .cover {
   background-image: url(../images/optimized/buddy.jpg);
@@ -2803,6 +2803,10 @@ a:hover {
 
   .link-spanner {
     z-index: 1;
+  }
+
+  .photos div {
+    background-size: 85%;
   }
 }
 @media only screen and (max-width: 480px) {

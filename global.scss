@@ -69,7 +69,7 @@ a{
         background:no-repeat fixed;
         background-position: 81% 45%;
         // background-height: 100%;
-        background-size: 80%;
+        background-size: 70%;
         //  &:nth-child(2n){
         //     background-color: F7F7F7;
         // }
@@ -168,6 +168,11 @@ a{
 
     .link-spanner{
         z-index:1;
+    }
+    .photos{
+        div{
+        background-size: 85%;
+        }
     }
 }
 
