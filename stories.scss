@@ -43,6 +43,7 @@ a{
 }
 
 .project-description{
+    z-index: 999;
     font-size:14px;
     color:white;
     min-width:150px;
@@ -200,11 +201,6 @@ a{
         transition: left 200ms ease-in;
     }
 
-    .on{
-        .fixed{
-            left: 148px;
-        }
-    }
 
     #fbsection1{
         .project-description{
@@ -265,6 +261,11 @@ a{
 }
 // 480 and under //
 @media only screen and (max-width: 480px) {
+
+        .project-description{
+         z-index: 0;
+        }
+
     .on{
         .fixed{
             a{
@@ -290,14 +291,14 @@ a{
             width: 80%;
             }
     }
+
+    .helper-arrow{
+        opacity: 0;
+    }
 }
 /* 320 and */
 @media only screen and (max-width: 320px) {
-    .on{
-        .fixed{
-            left: 158px;
-        }
-    }
+
 
     .helper-arrow{
         opacity: .4;
@@ -339,7 +340,7 @@ a{
     }
 
     #fbsection3{
-        background-image: url(../images/optimized/previews/buddy-alt-preview.jpg);
+        background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
         .project-description{
             left: 20%;
             top: 13%;

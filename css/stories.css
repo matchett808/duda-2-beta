@@ -2565,6 +2565,7 @@ a:hover {
 }
 
 .project-description {
+  z-index: 999;
   font-size: 14px;
   color: white;
   min-width: 150px;
@@ -2687,10 +2688,6 @@ a:hover {
     transition: left 200ms ease-in;
   }
 
-  .on .fixed {
-    left: 148px;
-  }
-
   #fbsection1 .project-description {
     left: 50%;
     top: 25%;
@@ -2741,6 +2738,10 @@ a:hover {
   }
 }
 @media only screen and (max-width: 480px) {
+  .project-description {
+    z-index: 0;
+  }
+
   .on .fixed a {
     opacity: .9;
   }
@@ -2759,13 +2760,13 @@ a:hover {
     left: 15%;
     width: 80%;
   }
+
+  .helper-arrow {
+    opacity: 0;
+  }
 }
 /* 320 and */
 @media only screen and (max-width: 320px) {
-  .on .fixed {
-    left: 158px;
-  }
-
   .helper-arrow {
     opacity: .4;
     right: 30%;
@@ -2795,7 +2796,7 @@ a:hover {
   }
 
   #fbsection3 {
-    background-image: url(../images/optimized/previews/buddy-alt-preview.jpg);
+    background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
   }
   #fbsection3 .project-description {
     left: 20%;

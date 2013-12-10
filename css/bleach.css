@@ -57,9 +57,6 @@ html, body {
     background-size: 80%;
   }
 
-  .on .fixed {
-    left: 158px;
-  }
   .on .fixed a {
     color: white;
   }

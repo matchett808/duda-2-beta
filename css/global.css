@@ -60,7 +60,7 @@ table {
   height: 100%;
   z-index: 9999;
   min-width: 325px;
-  overflow-x: none;
+  overflow-x: auto;
   overflow-y: auto;
   font-family: "Compact Sans Serifs",tahoma,verdana,arial,sans-serif;
   font-size: 2.4em;
@@ -128,8 +128,44 @@ table {
   left: 243px;
 }
 
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+
+  .on .fixed {
+    left: 148px;
+  }
+}
 @media only screen and (max-width: 480px) {
+  .on .fixed {
+    left: 198px;
+  }
+
+  .fixed {
+    top: 103px;
+    font-size: 1.2em;
+    left: -35px;
+  }
+  .fixed a:hover {
+    opacity: .9;
+  }
+  .fixed a .show {
+    opacity: 1;
+  }
+  .fixed a .hide {
+    opacity: .9;
+  }
+
+  .sidebar {
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
   .sidebar li a {
+    font-size: 1.3em;
+    line-height: 1.3em;
     color: white;
     opacity: .9;
   }
@@ -148,7 +184,7 @@ table {
   }
 
   .on .helper-arrow {
-    opacity: .1;
+    opacity: 0;
     transition: 80ms;
   }
   .on .screen {
@@ -156,24 +192,30 @@ table {
   }
 }
 @media only screen and (max-width: 320px) {
+  .fixed {
+    left: -20px;
+  }
+  .fixed a:hover {
+    opacity: .9;
+  }
+  .fixed a .show {
+    opacity: .9;
+  }
+
   .sidebar {
-    line-height: .2em;
+    top: 0px;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
-  .sidebar li a {
+  .sidebar ul {
+    margin-left: 12px;
+  }
+  .sidebar ul li a {
     color: white;
     opacity: .9;
   }
-  .sidebar li a:hover {
+  .sidebar ul li a:hover {
     opacity: 1;
-  }
-
-  .fixed {
-    top: 40px;
-  }
-  .fixed a {
-    opacity: .9;
   }
 
   .screen {
@@ -2702,9 +2744,18 @@ a:hover {
   display: none;
 }
 
+.mobile-only {
+  display: none;
+}
+
+.not-mobile {
+  display: block;
+}
+
 .link-spanner {
   position: absolute;
   top: 0;
+  z-index: 1;
   left: 0;
   width: 100%;
   height: 100%;
@@ -2770,7 +2821,6 @@ a:hover {
 
 .helper-arrow {
   clear: both;
-  display: block;
   font-size: 110px;
   font-weight: bold;
   color: black;
@@ -2791,16 +2841,6 @@ a:hover {
 
 /* 900px and under*/
 @media only screen and (max-width: 900px) {
-  .sidebar {
-    font-size: 1.6em;
-    transition: font-size 1ms ease-in;
-    transition: left 200ms ease-in;
-  }
-
-  .on .fixed {
-    left: 168px;
-  }
-
   .link-spanner {
     z-index: 1;
   }
@@ -2810,7 +2850,17 @@ a:hover {
   }
 }
 @media only screen and (max-width: 480px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .not-mobile {
+    display: none;
+    opacity: 0;
+  }
+
   .photos div {
+    background-attachment: scroll;
     background-size: 90%;
   }
 
@@ -2827,19 +2877,7 @@ a:hover {
     z-index: 1;
   }
 
-  .sidebar ul {
-    margin: 50px 0 0 12px;
-  }
-  .sidebar ul li {
-    margin-bottom: 1em;
-  }
-
   .fixed {
-    margin-top: 13.5%;
-    margin-left: -30px;
-  }
-
-  .on .fixed {
-    left: 158px;
+    margin-left: -15px;
   }
 }

@@ -27,10 +27,17 @@ a{
 .hidden{
     display: none;
 }
+.mobile-only{
+    display: none;
+}
+.not-mobile{
+    display: block;
+}
 
 .link-spanner{
     position: absolute;
     top:0;
+    z-index: 1;
     left: 0;
     width:100%;
     height:100%;
@@ -128,7 +135,6 @@ a{
 }
 .helper-arrow{
     clear: both;
-    display: block;
     font-size: 110px;
     font-weight: bold;
     color: black;
@@ -154,17 +160,6 @@ a{
 /* 900px and under*/
 // resizing sidebar
 @media only screen and (max-width: 900px) {
-    .sidebar{
-        font-size: 1.6em;
-        transition: font-size 1ms ease-in;
-        transition: left 200ms ease-in;
-    }
-
-    .on{
-        .fixed{
-            left: 168px;
-        }
-    }
 
     .link-spanner{
         z-index:1;
@@ -178,9 +173,16 @@ a{
 
 // 480 and under
 @media only screen and (max-width: 480px) {
-
+.mobile-only{
+    display: block;
+}
+.not-mobile{
+    display:none;
+    opacity: 0;
+}
 .photos{
     div{
+        background-attachment: scroll;
         background-size: 90%;
     }
 }
@@ -204,24 +206,10 @@ a{
     .link-spanner{
         z-index:1;
     }
-    .sidebar{
-        ul{
-        margin:50px 0 0 12px;
-            li{
-            margin-bottom: 1em;
-            }
-        }
-    }
+
     .fixed{
-        margin-top: 13.5%;
-        margin-left: -30px;
+        margin-left: -15px;
     }
 
-
-    .on{
-        .fixed{
-            left: 158px;
-        }
-    }
 }
 
