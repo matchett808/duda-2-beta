@@ -23,22 +23,16 @@ body {
 }
 
 .play-div {
-  font-family: "Compact Sans Serifs",tahoma,verdana,arial,sans-serif;
-  font-size: 3em;
-  font-weight: bold;
-  line-height: 1.1em;
   position: fixed;
-  top: 5;
-  left: 382;
-  width: 838px;
-  z-index: 99999;
-}
-.play-div .play-button:active {
-  color: grey;
+  top: -15px;
+  left: 30%;
+  z-index: 999;
 }
 
 .photos div {
   background-size: 65%;
+  width: 100%;
+  height: 100%;
 }
 .photos .cover {
   position: relative;
@@ -92,9 +86,19 @@ body {
     width: 100%;
     height: 100%;
     background-size: 80%;
+    background-position: 95% 90%;
   }
 
   .on .fixed a {
     color: white;
+  }
+
+  .play-div {
+    transition: 200ms;
+    left: 16%;
+  }
+
+  .hide-play {
+    opacity: .1;
   }
 }

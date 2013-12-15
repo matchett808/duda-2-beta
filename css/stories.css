@@ -2606,11 +2606,17 @@ a:hover {
 
 .fbsection2 .project-description {
   position: relative;
+  left: 25%;
+  top: 40%;
+}
+
+.fbsection3 .project-description {
+  position: relative;
   top: 26%;
   left: 70%;
 }
 
-.fbsection3 .project-description {
+.fbsection4 .project-description {
   position: relative;
   top: 18%;
   left: 27%;
@@ -2636,12 +2642,18 @@ a:hover {
 }
 
 #fbsection2 {
+  height: 100%;
+  background-size: cover;
+  background-image: url(../images/optimized/previews/watercolor-preview.jpg);
+}
+
+#fbsection3 {
   background-size: cover;
   height: 100%;
   background-image: url(../images/optimized/salmon.jpg);
 }
 
-#fbsection3 {
+#fbsection4 {
   height: 100%;
   background-size: cover;
   background-image: url(../images/optimized/previews/buddy-preview.jpg);
@@ -2700,12 +2712,9 @@ a:hover {
     opacity: .8;
   }
 
-  #fbsection2 {
-    background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
-  }
   #fbsection2 .project-description {
-    top: 28%;
-    left: 27%;
+    left: 25%;
+    top: 55%;
     width: 40%;
   }
   #fbsection2 .project-description .project-title {
@@ -2716,13 +2725,12 @@ a:hover {
   }
 
   #fbsection3 {
-    background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
   }
   #fbsection3 .project-description {
-    top: 24%;
-    left: 67%;
-    width: 30%;
+    top: 28%;
+    left: 27%;
+    width: 40%;
   }
   #fbsection3 .project-description .project-title {
     opacity: .7;
@@ -2730,9 +2738,25 @@ a:hover {
   #fbsection3 .project-description p {
     opacity: .8;
   }
+
+  #fbsection4 {
+    background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  #fbsection4 .project-description {
+    top: 24%;
+    left: 67%;
+    width: 30%;
+  }
+  #fbsection4 .project-description .project-title {
+    opacity: .7;
+  }
+  #fbsection4 .project-description p {
+    opacity: .8;
+  }
 }
 @media only screen and (max-width: 768px) {
-  #fbsection3 .project-description {
+  #fbsection4 .project-description {
     top: 12%;
     left: 58%;
   }
@@ -2757,6 +2781,11 @@ a:hover {
   }
 
   #fbsection3 .project-description {
+    left: 15%;
+    width: 80%;
+  }
+
+  #fbsection4 .project-description {
     left: 15%;
     width: 80%;
   }
@@ -2786,19 +2815,28 @@ a:hover {
     top: 13%;
   }
 
-  #fbsection2 {
-    background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
+  #fbsection2 h2 {
+    font-size: 2.9em;
   }
   #fbsection2 .project-description {
+    width: 80%;
+    left: 20%;
+    top: 10%;
+  }
+
+  #fbsection3 {
+    background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
+  }
+  #fbsection3 .project-description {
     left: 20%;
     top: 13%;
     width: 80%;
   }
 
-  #fbsection3 {
+  #fbsection4 {
     background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
   }
-  #fbsection3 .project-description {
+  #fbsection4 .project-description {
     left: 20%;
     top: 13%;
     width: 80%;

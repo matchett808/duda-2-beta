@@ -4,12 +4,12 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="/css/global.css">
     <link rel="stylesheet" type="text/css" href="/css/salmon.css">
+    <link rel="stylesheet" href="/css/sc-player-minimal.css" type="text/css">
 
     <title>Salmon</title>
 </head>
 
     <body>
-
 
         <!-- HELPER ARROW -->
 
@@ -36,11 +36,8 @@
         </div>
 <!-- AUDIO -->
         <div class="play-div">
-<audio id="player" src="/mp3/salmon.mp3"></audio>
-<div>
-    <a class="play-button" onclick="document.getElementById('player').play()">Play</a>
-</div>
-        </div>
+            <a href="https://soundcloud.com/michael-z-robin/salmon/s-cU335" class="sc-player">My new dub track</a>
+         </div>
 
 
 <!-- PHOTOS -->
@@ -128,9 +125,21 @@
             $('.screen-wrapper').toggleClass('on');
           });
 
+        $('.fixed,.sidebar').click(function() {
+            $('.play-div').toggleClass('hide-play');
+          });
+
 
         });
 
-        </script>    </body>
+        </script>
+
+<!-- Soundcloud scripts -->
+        <script type="text/javascript" src="/javascripts/soundcloud.player.api.js"></script>
+        <script type="text/javascript" src="/javascripts/sc-player.js"></script>
+
+
+
+         </body>
 </html>
 

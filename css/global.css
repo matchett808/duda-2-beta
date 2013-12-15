@@ -2841,6 +2841,11 @@ a:hover {
 
 /* 900px and under*/
 @media only screen and (max-width: 900px) {
+  .photos div {
+    background-attachment: scroll;
+    background-size: 90%;
+  }
+
   .link-spanner {
     z-index: 1;
   }
@@ -2857,11 +2862,6 @@ a:hover {
   .not-mobile {
     display: none;
     opacity: 0;
-  }
-
-  .photos div {
-    background-attachment: scroll;
-    background-size: 90%;
   }
 
   .on .fixed a {

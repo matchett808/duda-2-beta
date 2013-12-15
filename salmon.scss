@@ -22,18 +22,11 @@ body{
     position:relative;
 }
 .play-div{
-    font-family:"Compact Sans Serifs",tahoma,verdana,arial,sans-serif;
-    font-size: 3em;
-    font-weight: bold;
-    line-height: 1.1em;
     position:fixed;
-    top:5;
-    left: 382;
-    width: 838px;
-    z-index: 99999;
-    .play-button:active{
-        color: grey;
-    }
+    top:-15px;
+    left: 30%;
+
+    z-index: 999;
 }
 
 
@@ -45,6 +38,8 @@ body{
     div{
         // border:1px solid blue;
         background-size: 65%;
+        width: 100%;
+        height:100%;
 
     }
 
@@ -117,21 +112,29 @@ body{
 }
 /* 320 and */
 @media only screen and (max-width: 480px) {
-.photos{
-    div{
-        width: 100%;
-        height: 100%;
-        background-size: 80%;
-    }
-}
-.on{
-    .fixed{
-        a{
-            color:white;
+    .photos{
+        div{
+            width: 100%;
+            height: 100%;
+            background-size: 80%;
+            background-position: 95% 90%;
+
         }
     }
-}
-
+    .on{
+        .fixed{
+            a{
+                color:white;
+            }
+        }
+    }
+    .play-div{
+        transition: 200ms;
+        left: 16%;
+    }
+    .hide-play{
+        opacity: .1;
+    }
 
 
 }

@@ -1,0 +1,173 @@
+// AUDIO
+html, body{
+    height:100%;
+}
+//
+// helper-arrow to guide user to scroll
+// need js scroll easing script
+//
+
+
+
+.helper-arrow{
+    right: 33px;
+    bottom: 29px;
+    &:hover{
+        bottom: 18;
+    }
+}
+
+
+
+// INSERT PHOTOS HERE
+.photos{
+    // position:relative;
+    // border: 1px solid red;
+
+    div{
+        width: 100%;
+        background-position: 70% 50%;
+        // border:1px solid blue;
+        background-size: auto 90%;
+        height:100%;
+        // position: relative;
+    }
+
+    .cover{
+        background-image: url(../images/optimized/wc.jpg);
+        // background-position: 75% 50%;
+        position: relative;
+
+
+    }
+    .page1{
+        background-image: url(../images/optimized/wc1.jpg);
+        // background-position: 75% 50%;
+        // position: relative;
+
+
+    }
+    .page2{
+        background-image: url(../images/optimized/wc2.jpg);
+        // position: relative;
+
+    }
+    .page3{
+        background-image: url(../images/optimized/wc3.jpg);
+        // background-position: 75% 50%;
+        // position: relative;
+
+    }
+    .page4{
+        background-image: url(../images/optimized/wc4.jpg);
+        // background-position: 75% 48%;
+        // position: relative;
+
+    }
+    .page5{
+    background-image: url(../images/optimized/wc6.jpg);
+    // background-position: 75% 50%;
+    // position: relative;
+
+    }
+    .page6{
+    background-image: url(../images/optimized/wc7.jpg);
+    // background-position: 75% 50%;
+    // position: relative;
+
+    }
+    .page7{
+    background-image: url(../images/optimized/wc8.jpg);
+
+        background-position: 70% 50%;
+    // position: relative;
+
+    }
+    .page8{
+    background-image: url(../images/optimized/wc9.jpg);
+
+        background-position: 45% 50%;    // position: relative;
+
+    }
+    .page9{
+    background-image: url(../images/optimized/wc10.jpg);
+    // background-position: 75% 50%;
+    // position: relative;
+
+    }
+    .page10{
+    background-image: url(../images/optimized/wc11.jpg);
+    // background-position: 75% 50%;
+    // position: relative;
+
+    }
+    .page11{
+    background-image: url(../images/optimized/wc12.jpg);
+    // background-position: 75% 50%;
+    // position: relative;
+
+    }
+}
+//
+// MEDIA QUERIES
+//
+
+/* 900px and under*/
+// resizing sidebar
+@media only screen and (max-width: 900px) {
+    .sidebar{
+        font-size: 1.6em;
+        transition: font-size 1ms ease-in;
+        transition: left 200ms ease-in;
+    }
+.photos{
+        .page2{
+            background-size: auto 85%;
+        }
+
+        .page8{
+            background-position: 70% 50%;
+            background-size: auto 85%;
+        }
+
+        .page11{
+            background-position: 70% 50%;
+            background-size: auto 85%;
+        }
+    div{
+        width: 100%;
+        height: 100%;
+        background-size: 85%;
+    }
+}
+
+}
+
+
+/* 480 and */
+@media only screen and (max-width: 480px) {
+.photos{
+    .page2{
+        background-size: auto 65%;
+    }
+
+    .page8{
+        background-position: 70% 50%;
+        background-size: auto 65%;
+    }
+
+    .page11{
+        background-position: 70% 50%;
+        background-size: auto 65%;
+    }
+}
+    .on{
+        .fixed{
+            a{
+                color:white;
+            }
+        }
+    }
+}
+
+

@@ -98,15 +98,22 @@ a{
             top: 20%;
     }
 }
-
 .fbsection2{
+    .project-description{
+        position: relative;
+            left: 25%;
+            top: 40%;
+    }
+}
+
+.fbsection3{
     .project-description{
         position: relative;
         top: 26%;
         left: 70%;
     }
 }
-.fbsection3{
+.fbsection4{
     .project-description{
         position: relative;
         top: 18%;
@@ -133,12 +140,20 @@ a{
     height: 100%;
     background-image: url(../images/optimized/bleach.jpg);
 }
+
 #fbsection2{
+    height: 100%;
+    background-size: cover;
+    background-image: url(../images/optimized/previews/watercolor-preview.jpg);
+}
+#fbsection3{
     background-size: cover;
     height: 100%;
     background-image: url(../images/optimized/salmon.jpg);
 }
-#fbsection3{
+
+
+#fbsection4{
     height: 100%;
     background-size: cover;
     background-image: url(../images/optimized/previews/buddy-preview.jpg);
@@ -218,6 +233,21 @@ a{
     }
 
     #fbsection2{
+        .project-description{
+            left: 25%;
+            top: 55%;
+            width: 40%;
+            .project-title{
+            opacity:.7;
+            }
+
+        p{
+            opacity:.8;
+          }
+        }
+    }
+
+    #fbsection3{
         background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
         .project-description{
         top: 28%;
@@ -233,7 +263,7 @@ a{
         }
     }
 
-    #fbsection3{
+    #fbsection4{
         background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
         background-color: rgba(255,255,255,.3);
         .project-description{
@@ -253,7 +283,7 @@ a{
 // 786 and under (tablet portrait)
 @media only screen and (max-width: 768px) {
 
-    #fbsection3{
+    #fbsection4{
         .project-description{
         top: 12%;
         left: 58%;}
@@ -279,6 +309,7 @@ a{
             width: 80%;
             }
     }
+
     #fbsection2{;
         .project-description{
             left: 15%;
@@ -286,6 +317,12 @@ a{
             }
     }
     #fbsection3{;
+        .project-description{
+            left: 15%;
+            width: 80%;
+            }
+    }
+    #fbsection4{;
         .project-description{
             left: 15%;
             width: 80%;
@@ -331,6 +368,16 @@ a{
     }
 
     #fbsection2{
+        h2{
+            font-size:2.9em;
+        }
+        .project-description{
+            width: 80%;
+            left: 20%;
+            top: 10%;
+        }
+    }
+    #fbsection3{
         background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
         .project-description{
             left: 20%;
@@ -339,7 +386,7 @@ a{
         }
     }
 
-    #fbsection3{
+    #fbsection4{
         background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
         .project-description{
             left: 20%;
