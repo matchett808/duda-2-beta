@@ -118,6 +118,14 @@ a{
         position: relative;
         top: 18%;
         left: 27%;
+        width: 35%;
+    }
+}
+.fbsection5{
+    .project-description{
+        position: relative;
+            left: 60%;
+            top: 30%;
     }
 }
 
@@ -157,6 +165,14 @@ a{
     height: 100%;
     background-size: cover;
     background-image: url(../images/optimized/previews/buddy-preview.jpg);
+}
+
+#fbsection5{
+
+    background-size: cover;
+    height: 100%;
+    background-position: 0px -80px;
+    background-image: url(../images/optimized/lia10.jpg);
 }
 
 // SIDEBAR WHITENED
@@ -277,6 +293,21 @@ a{
             p{
                 opacity:.8;
             }
+        }
+    }
+
+    #fbsection5{
+        .project-description{
+            left: 50%;
+            top: 25%;
+            width: 40%;
+            .project-title{
+            opacity:.7;
+            }
+
+        p{
+            opacity:.8;
+          }
         }
     }
 }

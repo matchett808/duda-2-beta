@@ -1,6 +1,26 @@
 html{
     height:100%;
 }
+
+// description
+.series-title{
+    top: 1.8%;
+    right: 5%;
+}
+.on .series-description{
+    top: 34%;
+    left: 38.5%;
+    opacity: 1;
+}
+.series-description{
+    opacity: 0;
+    top: 34%;
+    left:38.5%;
+    transition: 500ms ease-in;
+    background-color: rgba(255,255,255,.7);
+}
+//
+
 .arrow-container{
     position: relative;
     height: 100%;

@@ -8,6 +8,16 @@
 
     <title>Salmon</title>
 </head>
+        <!-- TITLE- if background-size set to cover
+        maybe a description on click? maybe positioned somewhere else on screen? -->
+<!--         <div class="plus-to-minus">
+            <a class="series-title"> <span class="show"> +</span> <span class="hide"> -</span> SALMON </a>
+            <div class="series-description">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, quidem, quibusdam totam reiciendis quaerat odio nam ea alias ab cum. Ullam, excepturi nulla eos consequuntur iusto neque enim rem nesciunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, magni, eius, totam alias commodi porro accusamus quidem quas quis molestiae soluta fugiat! In, ullam minima sint. Autem id incidunt doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, non, aliquid, voluptas quo architecto repellendus adipisci sequi quod culpa aut aliquam nesciunt obcaecati. Inventore, tenetur laudantium saepe quasi ducimus ab!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, ea, adipisci, doloribus, soluta dicta enim cum animi aliquid accusamus necessitatibus perferendis deserunt molestiae saepe vel perspiciatis officia ad fuga ducimus.
+            </div>
+        </div> -->
+    <!-- end title -->
+
 
     <body>
 
@@ -28,10 +38,10 @@
         </div>
         <div class="sidebar">
                 <ul>
-                    <li> <a> EMILY DUDA</a>  </li>
+                    <li> <a href="/contact.html"> EMILY DUDA</a>  </li>
                     <li> <a href="/stories.html"> STORIES </a> </li>
-                    <li> <a> OBJECTS </a> </li>
-                    <li> <a> CONTACT </a> </li>
+                    <li> <a href="/contact.html"> OBJECTS </a> </li>
+                    <li> <a href="/contact.html"> CONTACT </a> </li>
                 </ul>
         </div>
 <!-- AUDIO -->
@@ -128,6 +138,11 @@
         $('.fixed,.sidebar').click(function() {
             $('.play-div').toggleClass('hide-play');
           });
+
+        $('.series-title').click(function() {
+            $('.plus-to-minus').toggleClass('on');
+          });
+
 
 
         });

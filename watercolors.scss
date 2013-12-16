@@ -2,6 +2,11 @@
 html, body{
     height:100%;
 }
+
+.series-title{
+    font-size: 4em;
+    right: 60px;
+}
 //
 // helper-arrow to guide user to scroll
 // need js scroll easing script
@@ -10,7 +15,7 @@ html, body{
 
 
 .helper-arrow{
-    right: 33px;
+    right: 24px;
     bottom: 29px;
     &:hover{
         bottom: 18;
@@ -26,9 +31,9 @@ html, body{
 
     div{
         width: 100%;
-        background-position: 70% 50%;
-        // border:1px solid blue;
-        background-size: auto 90%;
+        background-position: 73% 50%;
+        background-size: cover;
+        // background-size: auto 90%;
         height:100%;
         // position: relative;
     }
@@ -79,7 +84,7 @@ html, body{
     .page7{
     background-image: url(../images/optimized/wc8.jpg);
 
-        background-position: 70% 50%;
+        background-position: 73% 50%;
     // position: relative;
 
     }

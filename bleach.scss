@@ -2,11 +2,33 @@
 html, body{
     height:100%;
 }
+
+// DESCRIPTION
+.series-title{
+    top: .2%;
+    right: 10%;
+    display: none;
+}
+
+.series-description{
+    font-size: 1.1em;
+    font-weight: bold;
+    opacity: 0;
+    top: 36%;
+    left:35%;
+    padding: 14px;
+    transition: 500ms ease-in;
+}
+.on .series-description{
+    top: 36%;
+    left: 35%;
+    opacity: 1;
+}
+
 //
 // helper-arrow to guide user to scroll
 // need js scroll easing script
 //
-
 
 
 .helper-arrow{
@@ -60,7 +82,7 @@ html, body{
     }
     .page4{
         background-image: url(../images/optimized/bleach05.jpg);
-        background-position: 75% 48%;
+        background-position: 75% 68%;
         // position: relative;
 
     }

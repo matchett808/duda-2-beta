@@ -1,0 +1,132 @@
+body{
+    background-image: url(../images/optimized/lia1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+html, body{
+    height:100%;
+}
+
+@import 'reset';
+@import 'bootstrap';
+// SIDEBAR WHITENED
+.sidebar{
+    // background-color: rgba(0,0,0,.22);
+    min-width: 325px;
+    // box-shadow: 1px 0px 3px rgba(0,0,0,.22);
+    a{
+    color:white;
+    transition: 300ms linear;
+    opacity: .6;
+    // opacity: 1;
+        &:hover{
+            color:white;
+            opacity:.9;
+            // opacity: 1;
+        }
+    }
+}
+
+.fixed{
+    a{
+    color:white;
+    opacity: .6;
+    // opacity: 1;
+    transition: 300ms linear;
+        &:hover{
+            color:white;
+            opacity:.9;
+        }
+    }
+}
+
+
+//          //
+//  GLOBAL  //
+//          //
+
+
+
+a{
+    text-decoration: none;
+    color:black;
+    &:hover{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+//                 //
+//  HELPER CLASSES //
+//                 //
+
+
+
+
+
+//      //
+// BODY //
+//      //
+
+// CONTACT //
+.email{
+        position: fixed;
+        top: 55%;
+        left: 31px;
+        font-size: 3em;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+//
+// MEDIA QUERIES
+//
+
+/* 900px and under*/
+@media only screen and (max-width: 900px) {
+    .sidebar{
+        font-size: 1.6em;
+        transition: font-size 1ms ease-in;
+        transition: left 200ms ease-in;
+    }
+
+}
+// 786 and under (tablet portrait)
+@media only screen and (max-width: 768px) {
+.email{
+
+        font-size: 2.5em;
+}
+
+}
+// 480 and under //
+@media only screen and (max-width: 480px) {
+
+.email{
+
+        font-size: 1.8em;
+        top: 45%;
+        left: 20px;
+}
+
+    .on{
+        .fixed{
+            a{
+            opacity:.9;
+            }
+        }
+    }
+
+}
+/* 320 and */
+@media only screen and (max-width: 320px) {
+
+
+
+}
+
+
+

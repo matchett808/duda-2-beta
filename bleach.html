@@ -9,6 +9,14 @@
 </head>
     <body>
 
+        <!-- TITLE- if background-size set to cover
+        maybe a description on click? maybe positioned somewhere else on screen? -->
+        <div class="plus-to-minus">
+            <a class="series-title"> <span class="show"> +</span> <span class="hide"> -</span> BLEACH </a>
+            <div class="series-description">
+                My cat is very clumsy. One day he knocked his cat food all over. As I was cleaning it with all purpose bleach spray I realized I had accidentally sprayed a blue c-print of mine. I stopped. The bleach was boiling the blue ink into a vibrant orange/red. I watched the poison breathe through out the colors. I wiped the bleach off with a paper towel, only to see that it had left that spot pure white as if there was never any image or ink there. I knew I had to bleach myself, I had to feel that fire across my skin. It had to bubble, flame and linger. Only then did I have a real chance at wiping myself clean. All of the images are color-prints treated with bleach.
+            </div>
+        </div>
         <!-- HELPER ARROW -->
 
 
@@ -27,10 +35,10 @@
         </div>
          <div class="sidebar">
                 <ul>
-                    <li> <a> EMILY DUDA</a>  </li>
+                    <li> <a href="/contact.html"> EMILY DUDA</a>  </li>
                     <li> <a href="/stories.html"> STORIES </a> </li>
-                    <li> <a> OBJECTS </a> </li>
-                    <li> <a> CONTACT </a> </li>
+                    <li> <a href="/contact.html"> OBJECTS </a> </li>
+                    <li> <a href="/contact.html"> CONTACT </a> </li>
                 </ul>
         </div>
 
@@ -125,6 +133,9 @@
           });
           $('.fixed,.sidebar').click(function() {
             $('.screen-wrapper').toggleClass('on');
+          });
+          $('.series-title').click(function() {
+            $('.plus-to-minus').toggleClass('on');
           });
 
 
