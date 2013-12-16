@@ -3,23 +3,20 @@ html, body {
 }
 
 .series-title {
-  top: .2%;
+  top: -25px;
   right: 10%;
   display: none;
 }
 
 .series-description {
-  font-size: 1.1em;
-  font-weight: bold;
   opacity: 0;
-  top: 36%;
+  top: 30%;
   left: 35%;
-  padding: 14px;
-  transition: 500ms ease-in;
+  border-radius: 10px;
 }
 
 .on .series-description {
-  top: 36%;
+  top: 30%;
   left: 35%;
   opacity: 1;
 }
