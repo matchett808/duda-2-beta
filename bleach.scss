@@ -4,23 +4,14 @@ html, body{
 }
 
 // DESCRIPTION
-.series-title{
-    top: -25px;
-    right: 10%;
-    display: none;
-}
 
 .series-description{
-    opacity: 0;
-    top: 30%;
-    left:35%;
-    border-radius: 10px;
+    top: 32%;
+    left: 39%;
+    width: 45%;
+
 }
-.on .series-description{
-    top: 30%;
-    left: 35%;
-    opacity: 1;
-}
+
 
 //
 // helper-arrow to guide user to scroll
@@ -46,7 +37,7 @@ html, body{
     div{
         width: 100%;
         // border:1px solid blue;
-        background-size: 60%;
+        background-size: 55%;
         height:100%
         // position: relative;
     }

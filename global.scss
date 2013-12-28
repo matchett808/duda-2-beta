@@ -3,6 +3,7 @@
 @import 'bootstrap';
 html, body{
     height: 100%;
+    width: 100%;
 }
 //        //
 // GLOBAL //
@@ -51,40 +52,51 @@ a{
 
 .series-title{
     position: fixed;
-    top: 40px;
-    right: 30px;
+    right: 15px;
+    top: -2%;
     font-weight: bold;
     font-size: 4em;
     color: black;
     opacity: .6;
-    z-index: 999;
+    z-index: 99999;
     transition: 500ms;
     &:hover{
         opacity: .9;
     }
 }
 
-.series-description{
-    width: 50%;
+.description-screen{
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
-    border-radius: 45px;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.8);
     position: fixed;
-    // top: -200%;
-    top: 26%;
-    left: 26%;
-    padding: 24px 34px 34px 34px;
-    transition: 750ms ease-in;
+    top: 0;
+    left: 0;
+    transition: opacity 750ms;
     opacity: 0;
     z-index: 1;
+}
+
+.series-description{
+    font-weight: bold;
+    position: fixed;
+    margin: 0 auto;
+    top: 25%;
+    left: 35%;
+    width: 50%;
 
 }
 
-.on .series-description{
-    top: 26%;
+.on{
+    .description-screen{
     opacity: 1;
-    left: 26%;
     z-index: 999;
+    }
+
+    .series-title{
+    opacity: 1;
+    }
 }
 
 // PHOTOS

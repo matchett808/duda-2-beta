@@ -3,9 +3,7 @@ html, body{
     height:100%;
 }
 
-.series-title{
-    right: 60px;
-}
+
 //
 // helper-arrow to guide user to scroll
 // need js scroll easing script
@@ -31,7 +29,7 @@ html, body{
     div{
         width: 100%;
         background-position: 73% 50%;
-        background-size: cover;
+        background-size: auto 85%;
         // background-size: auto 90%;
         height:100%;
         // position: relative;
