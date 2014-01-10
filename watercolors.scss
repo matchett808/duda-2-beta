@@ -29,7 +29,7 @@ html, body{
     div{
         width: 100%;
         background-position: 73% 50%;
-        background-size: auto 85%;
+        background-size: cover;
         // background-size: auto 90%;
         height:100%;
         // position: relative;
@@ -52,6 +52,7 @@ html, body{
     .page2{
         background-image: url(../images/optimized/wc2.jpg);
         // position: relative;
+        background-position: 83% 100%;
 
     }
     .page3{
@@ -88,7 +89,7 @@ html, body{
     .page8{
     background-image: url(../images/optimized/wc9.jpg);
 
-        background-position: 45% 50%;    // position: relative;
+        background-position: 45% 90%;    // position: relative;
 
     }
     .page9{
@@ -105,7 +106,7 @@ html, body{
     }
     .page11{
     background-image: url(../images/optimized/wc12.jpg);
-    // background-position: 75% 50%;
+    background-position: 75% 75%;
     // position: relative;
 
     }

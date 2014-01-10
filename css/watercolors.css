@@ -13,7 +13,7 @@ html, body {
 .photos div {
   width: 100%;
   background-position: 73% 50%;
-  background-size: auto 85%;
+  background-size: cover;
   height: 100%;
 }
 .photos .cover {
@@ -25,6 +25,7 @@ html, body {
 }
 .photos .page2 {
   background-image: url(../images/optimized/wc2.jpg);
+  background-position: 83% 100%;
 }
 .photos .page3 {
   background-image: url(../images/optimized/wc3.jpg);
@@ -44,7 +45,7 @@ html, body {
 }
 .photos .page8 {
   background-image: url(../images/optimized/wc9.jpg);
-  background-position: 45% 50%;
+  background-position: 45% 90%;
 }
 .photos .page9 {
   background-image: url(../images/optimized/wc10.jpg);
@@ -54,6 +55,7 @@ html, body {
 }
 .photos .page11 {
   background-image: url(../images/optimized/wc12.jpg);
+  background-position: 75% 75%;
 }
 
 /* 900px and under*/
